@@ -1,35 +1,23 @@
-image: registry.gitlab.com/pages/hugo/hugo_extended:0.140.2
+default:
+  image: "hugomods/hugo:exts"
 
 variables:
-  HUGO_ENV: production
+  GIT_SUBMODULE_STRATEGY: recursive
+  THEME_URL: "github.com/adityatelange/hugo-PaperMod"
 
-default:
-  tags:
-    - docker
-    - linux
-  before_script:
-    - apk add --no-cache go curl bash nodejs
-    # - hugo mod get -u $THEME_URL
-    ## Uncomment the following if you use PostCSS. See https://gohugo.io/hugo-pipes/postcss/
-    #- npm install postcss postcss-cli autoprefixer
-
-test:
-  tags:
-    - docker
-    - linux
+test:  # builds and tests your site
   script:
     - hugo
   rules:
-    - if: $CI_COMMIT_REF_NAME != $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_BRANCH != $CI_DEFAULT_BRANCH
 
-pages:
-  tags:
-    - docker
-    - linux
+create-pages:  # a user-defined job that builds your pages and saves them to the specified path.
   script:
     - hugo
+  pages: true  # specifies that this is a Pages job
   artifacts:
     paths:
       - public
   rules:
-    - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  environment: production% 
