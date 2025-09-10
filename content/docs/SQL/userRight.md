@@ -63,3 +63,60 @@ RENAME USER 'utilisateur'@'localhost' TO 'geralt'@'localhost';
 
 
 ## DROIT Utilisateur
+
+### Lister les droits
+
+{{< tabs tabTotal="2">}}
+{{% tab tabName="Commande" %}}
+
+**Commande**
+
+```
+SHOW GRANTS FOR 'utilisateur'@'localhost';
+```
+
+{{% /tab %}}
+{{% tab tabName="Résulta" %}}
+
+**Résulta**
+
+
+
+{{% /tab %}}
+{{< /tabs >}}
+
+
+### Données des droits
+Cette commande attribut tout les droits à l'utilisateur sur la base test_db ainsie que toutes les tables qui luis sont associer
+
+```sql
+GRANT ALL PRIVILEGES ON test_db.* TO 'utilisateur'@'localhost';
+FLUSH PRIVILEGES;
+```
+
+{{% alert icon="" context="info" %}}
+
+INFO ! 
+
+**`FLUSH PRIVILEGES`** n'est pas une obligation il permet juste de recharger les droits sans avoir besoin de redémarée le serveur
+
+Pour faire simple si vous voullez que les nouvelles rêgles de droit soit effectif vaut mieux le faire!
+
+
+{{% /alert %}}
+
+
+Pour données des droits spécifiques ont peut utilisées cette commande 
+
+```sql
+GRANT SELECT, INSERT, UPDATE, DELETE ON nom_base.* TO 'utilisateur'@'localhost';
+```
+
+{{% alert icon="" context="info" %}}
+
+INFO ! 
+
+
+
+
+{{% /alert %}}
