@@ -13,6 +13,11 @@ title = 'maDoc'
         path = "github.com/gohugoio/hugo-mod-bootstrap-scss/v5"
         disable = false
 
+# Active le systémes d'alertes https://lotusdocs.dev/docs/shortcodes/alerts/
+[markup.goldmark.renderer]
+    unsafe = true
+
+
 [params]
     [params.footer]
         copyright       =   "Fait par [DaemonWhite](https://github.com/DaemonWhite)"
