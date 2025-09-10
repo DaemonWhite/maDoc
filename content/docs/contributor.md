@@ -9,11 +9,11 @@ draft: true
 toc: true
 ---
 
-## Bienvenue jeune contrinuteur
+## Bienvenue jeune contributeur
 
-Passon pas par quatres chemin ton temps est précieurs.
+Passons pas par quatre chemins ton temps est précieux.
 
-Avant toute choes il faut que vous installiez les prérequis
+Avant toute chose, il faut que vous installiez les prérequis
 
 ### Prérequis
 
@@ -21,7 +21,7 @@ Avant toute choes il faut que vous installiez les prérequis
 - GIT
 - HUGO
 
-Pour l'éditeur de texte je vous laisse le choix c'est qu'une question de goût
+Pour l'éditeur de texte je vous laisse le choix, c'est qu'une question de goût
 
 {{< tabs tabTotal="3">}}
 {{% tab tabName="Debian/Ubuntu/Mint" %}}
@@ -45,11 +45,11 @@ sudo pacman -S hugo
 {{% tab tabName="Windows" %}}
 
 **Windows**
-Ouvrez un terminal est tapée
+Ouvrez un terminal est tapé
 
 {{% alert="warning" context="warning" %}}
 
-N'installée surtout pas, c'est dépendance si vous les avez installée d'une autre manière (a titre individuel)
+N'installée surtout pas, c'est dépendance si vous les avez installées d'une autre manière (à titre individuel)
 
 {{% /alert %}}
 
@@ -66,49 +66,49 @@ winget install -e --id Gekorm.Dart
 {{% alert="warning" context="warning" %}}
 
 
-N'oublier pas de configurer git pour qu'il puisse marcher avec votre compte Gitlab Documentation [ICI](https://docs.gitlab.com/user/ssh/)
+N'oubliez pas de configurer git pour qu'il puisse marcher avec votre compte Gitlab Documentation [ICI](https://docs.gitlab.com/user/ssh/)
 
 {{% /alert %}}
 
 ## Créer un fork
 
-Rendez-vous sur [gitlab](https://gitlab.siovhb.lycee-basch.fr/matheo.travers/madoc) et chercher le projet maDoc (le lien vous y améne directement)
+Rendez-vous sur [gitlab](https://gitlab.siovhb.lycee-basch.fr/matheo.travers/madoc) et chercher le projet maDoc (le lien vous y amène directement)
 
 <img src="/contributor/gitlab.png" alt="page gitlab">
 
 En haut à droite cliquez sur FORK
 
-Vous deverez arrivée sur cette page.
-A part le namespace vous n'avez rien besoin de changer
+Vous devrez arriver sur cette page.
+À part le namespace vous n'avez rien besoin de changer
 <img src="/contributor/fork_info.png" alt="page fork">
 
 ### Déployer en local
 
-Une fois le fork créer pennsez bien à clonez le dépot sur votre machine la commande et la suivante
+Une fois le fork créé, pensez bien à cloner le dépôt sur votre machine, la commande et la suivante
 
 {{% alert="warning" context="warning" %}}
 
-Oubliez pas de rajoutez **`--recurse-submodules`** au risque d'avoir quelque petit problème
+N'oubliez pas de rajouter **`--recurse-submodules`** au risque d'avoir quelque petit problème
 
 {{% /alert %}}
 
-Example de commande
+Éxample de commande
 ```bash
 git clone --recurse-submodules git@gitlab.siovhb.lycee-basch.fr:your.space/fork
 ```
 
-une fois clonée ouvrer un terminal dans le dossier qui correspond à votre dépo et taper 
+Une fois clonée, ouvrez un terminal dans le dossier qui correspond à votre dépôt et tapez
 
 ```sh
 hugo server -D
 ```
-allez à l'adresse [http://localhost:1313/](http://localhost:1313/)
+Allez à l'adresse [http://localhost:1313/](http://localhost:1313/)
 
 
 
 ## Modifier le projet BASE
 
-Tout les contenues sont stoquer dans /content/docs/
+Tous les contenus sont stockés dans /content/docs/
 
 C'est écris en markdown par défaut un petit guide si besoin [ici](https://www.markdownguide.org/getting-started/)
 
@@ -131,3 +131,5 @@ Pour le reste vous pouvez soit regardez comment les autre on fait ou vous réfé
 ## Proposer votre travail
 
 Pour proposer votre travail il suffit de créer une merge request en allant sur le projet d'origine
+
+Et de le redirigé sur le dépo originel
