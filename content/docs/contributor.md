@@ -5,15 +5,24 @@ description: ""
 icon: "article"
 date: "2025-09-10T12:09:58+02:00"
 lastmod: "2025-09-10T12:09:58+02:00"
-draft: true
+draft: false
 toc: true
 ---
 
 ## Bienvenue jeune contributeur
 
-Passons pas par quatre chemins ton temps est précieux.
+Il existe plusieurs moyen de contribuer au projet.
 
-Avant toute chose, il faut que vous installiez les prérequis
+1. Faire des Issues(ticket) en demendant (Ajout/Correction/Modification)
+2. La seconde méthode plus ardue mais plus généreuse consiste à donnez participer au code
+
+## Méthode Issue 1
+
+### Avant tout
+
+Cette méthode elle est la plus fégnante
+
+## Méthode Contribution 2
 
 ### Prérequis
 
@@ -97,10 +106,38 @@ N'oubliez pas de rajouter **`--recurse-submodules`** au risque d'avoir quelque p
 git clone --recurse-submodules git@gitlab.siovhb.lycee-basch.fr:your.space/fork
 ```
 
+{{% alert="warning" context="warning" %}}
+
+Je vous recomande de créer votre propre banche ou d'utiliser la branche dev
+
+{{% /alert %}}
+
+{{< tabs tabTotal="2">}}
+{{% tab tabName="Créé votre branch" %}}
+
+```sh
+git branch nomDeVotreBranche
+git switch nomDeVotreBranche
+git push --set-upstream origin nomDeVotreBranche 
+```
+
+{{% /tab %}}
+{{% tab tabName="Utilisée la brancge dev" %}}
+
+
+```sh
+git switch dev
+```
+
+{{% /tab %}}
+{{< /tabs >}}
+
+
+
 Une fois clonée, ouvrez un terminal dans le dossier qui correspond à votre dépôt et tapez
 
 ```sh
-hugo server -D
+hugo server -D # Le tiret -D active les brouillons
 ```
 Allez à l'adresse [http://localhost:1313/](http://localhost:1313/)
 
@@ -118,7 +155,7 @@ si vous voulez créer une nouvelle page il faut faire comme ceci
 hugo new docs/paPage.md
 ```
 
-Si vouslez créer plusieurs page sur un même théme il faut faire comme-suit
+Si vous voulez créer plusieurs pages sur un même thème, il faut faire comme-suit
 
 ```sh
 hugo new docs/monTheme/_index.md
