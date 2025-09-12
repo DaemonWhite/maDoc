@@ -20,7 +20,9 @@ Il existe plusieurs moyen de contribuer au projet.
 
 ### Avant tout
 
-Cette méthode elle est la plus fégnante
+Cette méthode elle est la plus feignante elle sonsite à déposée un Ticket sur la page du projet
+
+
 
 ## Méthode Contribution 2
 
