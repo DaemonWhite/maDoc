@@ -1,6 +1,8 @@
 baseURL = 'https://example.org/'
 languageCode = 'fr'
 title = 'maDoc'
+relativeURLs = false
+canonifyURLs = true
 
 [module]
     # uncomment line below for temporary local development of module
