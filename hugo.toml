@@ -25,3 +25,6 @@ title = 'maDoc'
         sidebarIcons    = true
         titleIcon       = true
         
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
