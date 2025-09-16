@@ -77,6 +77,11 @@ jobs:
           key: hugo-${{ github.run_id }}
           restore-keys:
             hugo-
+      - name: Inject baseURL
+        run: |
+          sed -i "s|^baseURL = .*|baseURL = \"${BASE_URL_PROD}\"|" hugo.toml
+        env:
+          BASE_URL_PROD: ${{ vars.BASE_URL_PROD }}
       - name: Build the site
         run: |
           hugo \
