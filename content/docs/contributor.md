@@ -172,3 +172,8 @@ Pour le reste vous pouvez soit regardez comment les autre on fait ou vous réfé
 Pour proposer votre travail il suffit de créer une merge request en allant sur le projet d'origine
 
 Et de le redirigé sur le dépo originel
+
+Une vidéo exemple ci-dessous
+
+![](/contributor/merge_request.mp4)
+<video controls src="/contributor/merge_request.mp4" title="Title" style="width: 100%"></video>
