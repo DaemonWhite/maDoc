@@ -13,9 +13,9 @@ hero:
       mobile: "gradient-mobile.webp"
 
   badge:
-    text: v0.1.0
-    color: primary # primary, secondary, success, danger, warning, info, light, dark
-    pill: false # boolean
+    text: v0.0.1
+    color: warning # primary, secondary, success, danger, warning, info, light, dark
+    pill: true # boolean
     soft: true # boolean
 
   # titleLogo:
@@ -24,8 +24,8 @@ hero:
   #   alt: "Lotus Docs Logo"
   #   height: 80px
 
-  title: "Lotus Docs"
-  subtitle: A lightweight, **modern documentation** theme for Hugo. Easily customised for building **fast**, **secure**, and **SEO-friendly** documentation sites.
+  title: "ma Doc"
+  subtitle: Documentation pour tout usage, informatique et au-delà.
 
   image:
     path: "images" # path to image under configured assets directory. default 'images'
@@ -36,12 +36,12 @@ hero:
 
   ctaButton:
     icon: rocket_launch
-    btnText: "Get Started"
+    btnText: "Commencer"
     url: "/docs/"
-  cta2Button:
-    icon: construction
-    btnText: "In Development"
-    url: "https://github.com/colinwilson/lotusdocs"
+  # cta2Button:
+  #   icon: construction
+  #   btnText: "In Development"
+  #   url: "https://github.com/colinwilson/lotusdocs"
 
   info: "**Open Source** MIT Licensed."
 
