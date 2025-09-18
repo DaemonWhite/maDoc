@@ -11,17 +11,28 @@ toc: true
 
 ## Bienvenue jeune contributeur
 
-Il existe plusieurs moyen de contribuer au projet.
+Il existe plusieurs moyens de contribuer au projet.
 
-1. Faire des Issues(ticket) en demendant (Ajout/Correction/Modification)
-2. La seconde méthode plus ardue mais plus généreuse consiste à donnez participer au code
+1. Faire des Issues(ticket) en d'emmerdant (Ajout/Correction/Modification)
+2. La seconde méthode plus ardue mais plus généreuse consiste à donner participer au code
 
 ## Méthode Issue 1
 
 ### Avant tout
 
-Cette méthode elle est la plus feignante elle sonsite à déposée un Ticket sur la page du projet
+Cette méthode elle est la plus feignante elle consiste à déposer un Ticket sur la page du projet
 
+Dans ce ticket vous pouvez :
+- Demandez une correction orthographique
+- Demandez l'ajout d'une synthèse (Idéalement donnez un fichier markdown/pdf ou autre document texte)
+- Proposez des améliorations quel que soit tout est le bienvenu
+
+ {{% alert="warning" context="warning" %}}
+
+
+Pensez bien à ajoutée les bonnes informations.
+
+{{% /alert %}}
 
 
 ## Méthode Contribution 2
@@ -175,5 +186,4 @@ Et de le redirigé sur le dépo originel
 
 Une vidéo exemple ci-dessous
 
-![](/contributor/merge_request.mp4)
 <video controls src="/contributor/merge_request.mp4" title="Title" style="width: 100%"></video>
