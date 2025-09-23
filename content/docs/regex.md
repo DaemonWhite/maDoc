@@ -9,6 +9,14 @@ draft: false
 toc: true
 ---
 
+## Définition
+
+Les regex sont un ensemble de règles qui permet de rechercher des mots phrases dans un texte.
+
+Les regex sont utilisés un peu partout :
+- En informatique (Filtrer/tester/rechercher)
+- En documentation (recherche)
+
 
 ## Les options
 ### Sélecteur OU
@@ -86,7 +94,7 @@ Les conditions mis derrières un groupe s'appliquent sur toute la condition exem
 
 {{< /table >}}
 
-## Abréviation
+### Abréviation
 
 {{< table >}}
 | Symbole | exemple | définition |
@@ -100,3 +108,7 @@ Les conditions mis derrières un groupe s'appliquent sur toute la condition exem
 | **`\W`**     | **`\W`**     | équivalent à [^A-Za-z0-9_] |
 
 {{< /table >}}
+
+## Outil
+
+[regexone.com](https://regexone.com/) outil pour tester vos règles
