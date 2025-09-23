@@ -26,8 +26,8 @@ toc: true
 |---------|---------|----------- |
 | **`[abc]`**  | **`[aze]`**     | choisie parmi les lettres entre crochet
 | **`[a-z]`**  | **`[a-Z]`**     | Selectionne tout les caractéres ASCII entre éléments 'A' et 'B'
-| **`[^0-9]`** | **`[^0-2]`**     | Selectionne tout les caractères que ne ce trouve pas entre éléments 'A' et 'B'
-|  .      |   .        | Carctéres quelconques
+| **`[^0-9]`** | **`[^0-2]`**    | Selectionne tout les caractères que ne ce trouve pas entre éléments 'A' et 'B'
+|  **`.`**     |   **`.`**       | Carctéres quelconques
 {{< /table >}}
 
 ### Echapement
