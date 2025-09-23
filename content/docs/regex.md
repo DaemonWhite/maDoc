@@ -21,7 +21,7 @@ Les regex sont utilisés un peu partout :
 ## Les options
 ### Sélecteur OU
 
-{{< table >}}
+{{< table "table-responsive table-striped-columns" >}}
 | Symbole | exemple | définition |
 |---------|---------|----------- |
 | **`\|`**  |   **`x\|y`** | Choisie entre X ou Y |
@@ -29,7 +29,7 @@ Les regex sont utilisés un peu partout :
 
 ### Sélecteur Multiple
 
-{{< table >}}
+{{< table "table-responsive table-striped-columns" >}}
 | Symbole | exemple | définition |
 |---------|---------|----------- |
 | **`[abc]`**  | **`[aze]`**     | choisie parmi les lettres entre crochet
@@ -40,7 +40,7 @@ Les regex sont utilisés un peu partout :
 
 ### Échappement
 
-{{< table >}}
+{{< table "table-responsive table-striped-columns" >}}
 | Symbole | exemple | définition |
 |---------|---------|----------- |
 | **`\`**   | **`\\`**     | Échappe un caractère
@@ -55,7 +55,7 @@ l'utilisation des **`\`** fait qu'on doit changer les démarqueurs des regex
 
 ### Quantificateurs
 
-{{< table >}}
+{{< table "table-responsive table-striped-columns" >}}
 | Symbole | exemple | définition |
 |---------|---------|----------- |
 | **`*`**   | **`a*`**     | Sélections **zero** ou **plusieurs** éléments **X** |
@@ -70,7 +70,7 @@ l'utilisation des **`\`** fait qu'on doit changer les démarqueurs des regex
 
 ### Groupement
 
-{{< table >}}
+{{< table "table-responsive table-striped-columns" >}}
 | Symbole | exemple | définition |
 |---------|---------|----------- |
 | **`()`**     | **`(a\|x){5}`**     | Regroupe des conditions dans un même bloque  |
@@ -86,7 +86,7 @@ Les conditions mis derrières un groupe s'appliquent sur toute la condition exem
 
 ### Condition
 
-{{< table >}}
+{{< table  "table-responsive table-striped-columns" >}}
 | Symbole | exemple | définition |
 |---------|---------|----------- |
 | **`^`**     | **`^a`**     | Doit commencer par '`X`' élément |
@@ -96,7 +96,7 @@ Les conditions mis derrières un groupe s'appliquent sur toute la condition exem
 
 ### Abréviation
 
-{{< table >}}
+{{< table "table-responsive table-striped-columns" >}}
 | Symbole | exemple | définition |
 |---------|---------|----------- |
 | **`\b`**     | **`\b`**     | Séparateur de mots : espace, ponctuation |
