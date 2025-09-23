@@ -1,8 +1,8 @@
 ---
 weight: 999
 title: "SSH"
-description: ""
-icon: "article"
+description: "Ce connecter avec git en SSH avec GitHub/GitLab"
+icon: "publish"
 date: "2025-09-23T10:48:38+02:00"
 lastmod: "2025-09-23T10:48:38+02:00"
 draft: false
@@ -64,7 +64,7 @@ ssh-keygen -t rsa -b 4096 -C "votre_adresse_mail@example.com"
 
 > Rendez-vous sur la page de votre instance GitKab > préférences > SSH Keys
 
-<img src="/git/ssh_gitlab.png" alt="page gitlab">
+<img src="/git/ssh_gitlab.png" alt="ppage des clef ssh gitlab">
 
 > dans votre terminal taper:
 > ```sh
@@ -82,7 +82,7 @@ ssh-keygen -t rsa -b 4096 -C "votre_adresse_mail@example.com"
 > Cliquez après sur add new key est complété les options.
 > Vous deverez avoir quelque chose de similaire
 
-<img src="/git/ssh_gitlab2.png" alt="page gitlab">
+<img src="/git/ssh_gitlab2.png" alt="page clef ssh gitlab">
 
 ```sh
 ssh -T git@gitlab.siovhb.lycee-basch.fr
@@ -101,7 +101,7 @@ Si tout s'est bien passé la commande devrait retourner votre nom d'utilisateurs
 
 > Rendez-vous sur votre dans les préférences de votre compte [github](https://github.com/settings/keys) > SSH and GPG Keys
 
-<img src="/git/ssh_github.png" alt="page gitlab">
+<img src="/git/ssh_github.png" alt="page des clef ssh github">
 
 > dans votre terminal taper les commandes suivantes
 >
@@ -119,7 +119,7 @@ Ne copiez surtout pas votre clef privée `id_ed25519`
 > Cliquez après sur `new SSH key` est complété les options.
 > Vous deverez avoir quelque chose de similaire
 
-<img src="/git/ssh_github2.png" alt="page gitlab">
+<img src="/git/ssh_github2.png" alt="page ssh github">
 
 ```sh
 ssh -T git@github.com

@@ -2,7 +2,7 @@
 weight: 0
 title: "Contributor"
 description: ""
-icon: "article"
+icon: "crowdsource"
 date: "2025-09-10T12:09:58+02:00"
 lastmod: "2025-09-10T12:09:58+02:00"
 draft: false

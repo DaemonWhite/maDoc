@@ -2,7 +2,7 @@
 weight: 999
 title: "Regex"
 description: "Les regex alias expression régulière, permettent de faire des recherches complexes au sein d'un texte"
-icon: "article"
+icon: "regular_expression"
 date: "2025-09-23T08:19:14+02:00"
 lastmod: "2025-09-23T08:19:14+02:00"
 draft: false
