@@ -28,8 +28,8 @@ hero:
   subtitle: Documentation pour tout usage, informatique et au-delà.
 
   image:
-    path: "images" # path to image under configured assets directory. default 'images'
-    filename: "lotus_docs_screenshot.png" # filename of your hero image (including file extension)
+    path: "images/templates/hero" # path to image under configured assets directory. default 'images'
+    filename: "hero.webp" # filename of your hero image (including file extension)
     alt: "Lotus Docs Screenshot" # Optional but recommended
     boxShadow: true # default 'false' (excludes .svg images)
     rounded: true # round the image corners? default 'false' (excludes .svg images)
