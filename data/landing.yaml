@@ -13,7 +13,7 @@ hero:
       mobile: "gradient-mobile.webp"
 
   badge:
-    text: v0.0.1
+    text: v0.0.2
     color: warning # primary, secondary, success, danger, warning, info, light, dark
     pill: true # boolean
     soft: true # boolean
@@ -24,8 +24,8 @@ hero:
   #   alt: "Lotus Docs Logo"
   #   height: 80px
 
-  title: "ma Doc"
-  subtitle: Documentation pour tout usage, informatique et au-delà.
+  title: "maDoc"
+  subtitle: Documentation pour tout usage, informatique et au-delà. Si vous aimez, n'hésiter pas à contribuer au projet.
 
   image:
     path: "images/templates/hero" # path to image under configured assets directory. default 'images'
@@ -35,8 +35,8 @@ hero:
     rounded: true # round the image corners? default 'false' (excludes .svg images)
 
   ctaButton:
-    icon: rocket_launch
-    btnText: "Commencer"
+    icon: menu_book
+    btnText: "Lire la doc"
     url: "/docs/"
   # cta2Button:
   #   icon: construction
@@ -47,49 +47,25 @@ hero:
 
 # Feature Grid
 featureGrid:
-  enable: false
+  enable: true
   weight: 20
   template: feature grid
 
-  title: Why choose Lotus Docs?
-  subtitle: Lotus Docs is a highly configurable Hugo documentation theme. Yet, with the default configuration you can deploy and publish your documentation site in a matter of minutes. Check out some core features below.
+  title: Les Synthèse 
+  subtitle: maDoc contient des synthèses/micro-doc sur tous les thèmes touchant au BTS SIO ou au domaine de l'informatique en général
 
   items:
-    - title: Fast
-      icon: speed
-      description: 4 x 100's score on Google Lighthouse by default. Lotus Docs removes unused CSS, prefetches asset links, and lazy loads content images.
+    - title: GIT
+      icon: commit
+      description: Les bases de Git et sa configuration SSH [Lire la doc git](/docs/git)
 
-    - title: SEO Friendly
-      icon: trending_up
-      description: Data is automatically structured to be SEO friendly. Includes Meta tags, Opengraph, and Twitter cards. Choose the settings that best suit you.
+    - title: SQL
+      icon: database
+      description: Base de l'SQL avec MariaDB et MySQL [Lire la doc sql](/docs/sql)
 
-    - title: Secure by default
-      icon: lock
-      description: Lotus Docs' default configuration scores A+ on Mozilla Observatory. You can update the default Security Headers to suit your requirements.
-
-    - title: Optional Features
-      icon: settings
-      description: Many Lotus Docs features are configurable via optional parameters. Require DocSearch for your site? Then enable it via a single setting.
-
-    - title: Deploy to Vercel
-      icon: change_history
-      description: Deploy to Vercel in seconds. Vercel Functions, Vercel Redirects/Rewrites, and Vercel Headers are all configurable for an enriched experience.
-
-    - title: Dark Mode
-      icon: dark_mode
-      description: "Prefer not to be blasted by the sun while reading? Switch to a low-light UI with the click of a button. Modify colour variables to match your branding."
-
-    - title: Search by DocSearch
-      icon: search
-      description: Search your docs with DocSearch. A powerful, efficient and accessible search solution built on Algolia Crawler & Autocomplete.
-
-    - title: Multilingual Support
-      icon: translate
-      description: Lotus Docs supports Hugo's Multilingual Mode. Create documentation in multiple languages side by side with i18n support.
-
-    - title: Bootstrap v5
-      icon: palette
-      description: Built on Bootstrap 5, Lotus Docs allows for a familiar, flexible, and intuitive developer experience. Easily customise your site via SCSS variables and files.
+    - title: Regex
+      icon: regular_expression
+      description: Mémo des expressions régulières [Lire le mémo des regex](/docs/regex)
 
 # Image compare
 imageCompare:
