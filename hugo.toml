@@ -26,6 +26,7 @@ canonifyURLs = true
     [params.docs]
         sidebarIcons    = true
         titleIcon       = true
+        darkMode        = true
         
 [caches]
   [caches.images]
