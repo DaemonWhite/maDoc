@@ -11,51 +11,51 @@ toc: true
 
 
 ## Les options
-### Selecteur OU
+### Sélecteur OU
 
 {{< table >}}
-| Symbole | example | definition |
+| Symbole | exemple | définition |
 |---------|---------|----------- |
 | **`\|`**  |   **`x\|y`** | Choisie entre X ou Y |
 {{< /table >}}
 
-### Selecteur Multible
+### Sélecteur Multiple
 
 {{< table >}}
-| Symbole | example | definition |
+| Symbole | exemple | définition |
 |---------|---------|----------- |
 | **`[abc]`**  | **`[aze]`**     | choisie parmi les lettres entre crochet
-| **`[a-z]`**  | **`[a-Z]`**     | Selectionne tout les caractéres ASCII entre éléments 'A' et 'B'
-| **`[^0-9]`** | **`[^0-2]`**    | Selectionne tout les caractères que ne ce trouve pas entre éléments 'A' et 'B'
-|  **`.`**     |   **`.`**       | Carctéres quelconques
+| **`[a-z]`**  | **`[a-Z]`**     | Sélections tous les caractères ASCII entre éléments 'A' et 'B'
+| **`[^0-9]`** | **`[^0-2]`**    | Sélections tous les caractères que ne se trouve pas entre éléments 'A' et 'B'
+|  **`.`**     |   **`.`**       | caractères quelconques
 {{< /table >}}
 
-### Echapement
+### Échappement
 
 {{< table >}}
-| Symbole | example | definition |
+| Symbole | exemple | définition |
 |---------|---------|----------- |
-| **`\`**   | **`\\`**     | Echape un charactères
+| **`\`**   | **`\\`**     | Échappe un caractère
 {{< /table >}}
 
 {{% alert icon="" context="warning" %}}
 
 **Attention !** 
 
-l'utilisation des **`\`** fait qu'on dois changer les démarqueurs des regex  
+l'utilisation des **`\`** fait qu'on doit changer les démarqueurs des regex  
 {{% /alert %}}
 
 ### Quantificateurs
 
 {{< table >}}
-| Symbole | example | definition |
+| Symbole | exemple | définition |
 |---------|---------|----------- |
-| **`*`**   | **`a*`**     | Selectione **zero** ou **plusieurs** éléments **X** |
-| **`+`**   | **`a+`**    | Selectione **un** ou **plusieurs** éléments **X** |
-| **`?`**   | **`a?`**     | Selectione **zero** ou **un** éléments **X** |
-| **`{n}`** |     **`a{5}`**    | Selectione **n** éléments **X** |
-| **`{n,}`**  |   **`a{3,}`**    | Selectione minimum **n** éléments **X** |
-| **`{n,m}`**   | **`a{3,7}`**     | Selectione minimum **n** à max **m** éléments **X** |
+| **`*`**   | **`a*`**     | Sélections **zero** ou **plusieurs** éléments **X** |
+| **`+`**   | **`a+`**    | Sélections **un** ou **plusieurs** éléments **X** |
+| **`?`**   | **`a?`**     | Sélections **zero** ou **un** éléments **X** |
+| **`{n}`** |     **`a{5}`**    | Sélections **n** éléments **X** |
+| **`{n,}`**  |   **`a{3,}`**    | Sélections minimum **n** éléments **X** |
+| **`{n,m}`**   | **`a{3,7}`**     | Sélections minimum **n** à max **m** éléments **X** |
 
 
 {{< /table >}}
@@ -63,15 +63,40 @@ l'utilisation des **`\`** fait qu'on dois changer les démarqueurs des regex
 ### Groupement
 
 {{< table >}}
-| Symbole | example | definition |
+| Symbole | exemple | définition |
 |---------|---------|----------- |
-| **`()`**     | **`(a\|x){5}`**     | Regroupe des conditions dans un même bloque
+| **`()`**     | **`(a\|x){5}`**     | Regroupe des conditions dans un même bloque  |
 {{< /table >}}
 
 {{% alert icon="" context="info" %}}
 
 **Note !**
 
-Les condition mis derrières un groupe s'applique sur toute la contion example ici `(a\|x){5}` veut dire 5 caractère `a` ou `x`
+Les conditions mis derrières un groupe s'appliquent sur toute la condition exemple ici `(a\|x){5}` veulent dire 5 caractères `a` ou `x`
 
 {{% /alert %}}
+
+### Condition
+
+{{< table >}}
+| Symbole | exemple | définition |
+|---------|---------|----------- |
+| **`^`**     | **`^a`**     | Doit commencer par '`X`' élément |
+| **`$`**     | **`a$`**     | Doit finir par '`X`' élément |
+
+{{< /table >}}
+
+## Abréviation
+
+{{< table >}}
+| Symbole | exemple | définition |
+|---------|---------|----------- |
+| **`\b`**     | **`\b`**     | Séparateur de mots : espace, ponctuation |
+| **`\d`**     | **`\d`**     | équivalent à [0-9] |
+| **`\D`**     | **`\D`**     | équivalent à [^0-9] |
+| **`\s`**     | **`\s`**     | Caractère d'espacement (espace, tabulation, saut de page, ...) équivalent à [ \f\n\r\t\v] |
+| **`\S`**     | **`\S`**     | Un seul caractère sauf un espacement |
+| **`\w`**     | **`\w`**     | équivalent à [A-Za-z0-9_] |
+| **`\W`**     | **`\W`**     | équivalent à [^A-Za-z0-9_] |
+
+{{< /table >}}
