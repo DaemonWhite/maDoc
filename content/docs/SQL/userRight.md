@@ -6,7 +6,7 @@ author = "TRAVERS Mathéo"
 title = "SQL Droit utilisateurs"
 icon = "rocket_launch"
 toc = true
-description = "Base des requêtes SQL"
+description = "Création à la gestion des utilisateurs"
 publishdate = "2025-05-03T22:37:22+02:00"
 tags = ["sql"]
 +++
