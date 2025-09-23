@@ -14,23 +14,23 @@ toc: true
 Il existe plusieurs moyens de contribuer au projet.
 
 1. Faire des Issues(ticket) en d'emmerdant (Ajout/Correction/Modification)
-2. La seconde méthode plus ardue mais plus généreuse consiste à donner participer au code
+2. La seconde méthode plus ardue, mais plus généreuse consiste à donner et participer au code
 
 ## Méthode Issue 1
 
 ### Avant tout
 
-Cette méthode elle est la plus feignante elle consiste à déposer un Ticket sur la page du projet
+Cette méthode est la plus feignante, elle consiste à déposer un Ticket sur la page du projet
 
-Dans ce ticket vous pouvez :
+Dans ce ticket, vous pouvez :
 - Demandez une correction orthographique
-- Demandez l'ajout d'une synthèse (Idéalement donnez un fichier markdown/pdf ou autre document texte)
-- Proposez des améliorations quel que soit tout est le bienvenu
+- Demandez l'ajout d'une synthèse (Idéalement, donnez un fichier markdown/pdf ou autre document texte)
+- Proposez des améliorations quel que soit tout est le bienvenu.
 
  {{% alert="warning" context="warning" %}}
 
 
-Pensez bien à ajoutée les bonnes informations.
+Pensez bien a ajoutée les bonnes informations.
 
 {{% /alert %}}
 
@@ -43,7 +43,7 @@ Pensez bien à ajoutée les bonnes informations.
 - GIT
 - HUGO
 
-Pour l'éditeur de texte je vous laisse le choix, c'est qu'une question de goût
+Pour l'éditeur de texte je vous laisse le choix, ce n'est qu'une question de goût
 
 {{< tabs tabTotal="3">}}
 {{% tab tabName="Debian/Ubuntu/Mint" %}}
@@ -114,19 +114,19 @@ N'oubliez pas de rajouter **`--recurse-submodules`** au risque d'avoir quelque p
 
 {{% /alert %}}
 
-Éxample de commande
+Exemple de commande
 ```bash
 git clone --recurse-submodules git@gitlab.siovhb.lycee-basch.fr:your.space/fork
 ```
 
 {{% alert="warning" context="warning" %}}
 
-Je vous recomande de créer votre propre banche ou d'utiliser la branche dev
+Je vous recommande de créer votre propre banche ou d'utiliser la branche dev
 
 {{% /alert %}}
 
 {{< tabs tabTotal="2">}}
-{{% tab tabName="Créé votre branch" %}}
+{{% tab tabName="Créé votre branche" %}}
 
 ```sh
 git branch nomDeVotreBranche
@@ -135,7 +135,7 @@ git push --set-upstream origin nomDeVotreBranche
 ```
 
 {{% /tab %}}
-{{% tab tabName="Utilisée la brancge dev" %}}
+{{% tab tabName="Utilisée la branche dev" %}}
 
 
 ```sh
@@ -162,7 +162,7 @@ Tous les contenus sont stockés dans /content/docs/
 
 C'est écris en markdown par défaut un petit guide si besoin [ici](https://www.markdownguide.org/getting-started/)
 
-si vous voulez créer une nouvelle page il faut faire comme ceci
+si vous voulez créer une nouvelle page, il faut faire comme ceci
 
 ```sh
 hugo new docs/paPage.md
@@ -176,13 +176,13 @@ hugo new docs/paPage1.md
 hugo new docs/paPage2.md
 ```
 
-Pour le reste vous pouvez soit regardez comment les autre on fait ou vous référer à la doc [officiel](https://lotusdocs.dev/docs/features/syntax-highlighting/)
+Pour le reste, vous pouvez soit regarder comment les autres, on fait ou vous référer à la doc [officiel](https://lotusdocs.dev/docs/features/syntax-highlighting/)
 
 ## Proposer votre travail
 
-Pour proposer votre travail il suffit de créer une merge request en allant sur le projet d'origine
+Pour proposer votre travail, il suffit de créer une merge request en allant sur le projet d'origine
 
-Et de le redirigé sur le dépo originel
+Et de le redirigé sur le dépôt originel
 
 Une vidéo exemple ci-dessous
 

@@ -18,9 +18,9 @@ tags = ["sql"]
 
 ATTENTION ! 
 
-Les requêtes sont basé sur des serveurs de type MariaDB/MySQL
+Les requêtes sont basées sur des serveurs de type MariaDB/MySQL
 
-Il ce peut qu'il y'es des modifications à prévoire pour PostgreSQL et les autres
+Il se pourrait qu'il y es des modifications à prévoir pour PostgreSQL et les autres SGBDR
 
 {{% /alert %}}
 
@@ -33,16 +33,16 @@ CREATE USER 'nomUtilisateurs'@'localhost' IDENTIFIED BY 'motdepasse';
 
 INFO Localhost
 
-localhost permet à l'utilisateur de ce connecter que en local c'est un équivalent moins stricte que 127.0.0.1
+localhost permet à l'utilisateur de se connecter qu'en local, c'est un équivalent moins strict que 127.0.0.1
 
 Voici une liste exaustive des autres modes
 
 | Titre    | Options                | description |
 |----------|------------------------|--------------------------------------------------------|
-|Tous      | %                      | Toutes connexion pause des enjeux de sécuritée à évitée |
-| Domaine  | monserveur.domaine.com | On peut limitée par un domaine |
-|IP Stricte| 192.168.1.50           | Bloquage stricte en IP |
-| IP Plage |192.168.1.%             | autorise toute les IP commençan par 192.168.1 |
+|Tous      | %                      | Toutes IP autorisée. Cela pose des enjeux de sécurité **à éviter** |
+| Domaine  | monserveur.domaine.com | Accès limitée par un domaine |
+|IP Stricte| 192.168.1.50           | Blocage stricte en IP |
+| IP Plage |192.168.1.%             | autorise toute les IP commençant par 192.168.1.X |
 
 {{% /alert %}}
 
@@ -87,7 +87,7 @@ SHOW GRANTS FOR 'utilisateur'@'localhost';
 
 
 ### Données des droits
-Cette commande attribut tout les droits à l'utilisateur sur la base test_db ainsie que toutes les tables qui luis sont associer
+Cette commande attribut tous les droits à l'utilisateur sur la base test_db ainsi que toutes les tables qui lui sont associé
 
 ```sql
 GRANT ALL PRIVILEGES ON test_db.* TO 'utilisateur'@'localhost';
@@ -98,15 +98,15 @@ FLUSH PRIVILEGES;
 
 INFO ! 
 
-**`FLUSH PRIVILEGES`** n'est pas une obligation il permet juste de recharger les droits sans avoir besoin de redémarée le serveur
+**`FLUSH PRIVILEGES`** n'est pas une obligation, il permet juste de recharger les droits sans avoir besoin de redémarrée le serveur
 
-Pour faire simple si vous voullez que les nouvelles rêgles de droit soit effectif vaut mieux le faire!
+Pour faire simple si vous voulez que les nouvelles règles de droit soit effectif vaut mieux le faire !
 
 
 {{% /alert %}}
 
 
-Pour données des droits spécifiques ont peut utilisées cette commande 
+Pour donner des droits spécifiques ont peu utilisé cette commande 
 
 ```sql
 GRANT SELECT, INSERT, UPDATE, DELETE ON nom_base.* TO 'utilisateur'@'localhost';
