@@ -5,7 +5,7 @@ description: "Les bases de git"
 icon: "article"
 date: "2025-09-24T17:17:10+02:00"
 lastmod: "2025-09-24T17:17:10+02:00"
-draft: true
+draft: false
 toc: true
 ---
 
