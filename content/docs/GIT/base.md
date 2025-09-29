@@ -5,7 +5,7 @@ description: "Les bases de git"
 icon: "article"
 date: "2025-09-24T17:17:10+02:00"
 lastmod: "2025-09-24T17:17:10+02:00"
-draft: true
+draft: false
 toc: true
 ---
 
@@ -157,3 +157,105 @@ Félicitation, vous avez créé votre premier projet
 
 {{% /tab %}}
 {{< /tabs >}}
+
+## Premier pas
+
+Super maintenant qu'on à notre projet il serait bien de pouvoir s'en servir correctement
+
+### Les commits
+
+Un commit est une instance dans votre dépôt git l'objectif, c'est de montrer les modifications apportées par qui, pour quoi et quand.
+
+Illustrons ceci avec un exemple
+
+Imaginons que je fasse un hello world en python, mais que j'oublie le `r` de `world`
+
+mon programme ressemblera à ceci
+
+```python
+def bonjour()
+  print("Hello wold")
+
+bonjour()
+```
+
+Maintenant corrigeons le code en rajoutant le r et faisons un `git diff` pour voir les modifications tout de suite
+
+
+{{< prism lang="python" line="2,3" >}}
+def bonjour()
+  print("Hello wold") # Ancient code
+  print("hello world") # Nouveau code
+
+bonjour()
+{{< /prism >}}
+
+cette différence, elle est faite pour chaque commit pour nous montrer rapidement ce que l'utilisateur à modifier
+
+créont notre commit pour voir
+```sh
+git add python.py # Il faut inclure les fichier dans un commit
+git commit -m "fix: wold by world" # Le nom de notre commit
+git push # Pour l'envoyer sur github ou gitlab
+```
+
+faisons un `git log`
+
+```log
+commit 736f6fd48e7c4f3ea34625a0040b1a489f48e907 (HEAD ->
+ master)
+Author: DaemonWhite <daemonwhites@vivaldi.net>
+Date:   Mon Sep 29 09:42:19 2025 +0200
+
+    fix: wold by world
+
+commit 7be432a97de20836ab35c301d82389860b5e7989 ## référence de notre commit 
+Author: Michel <michel@vivaldi.net> ## Qui la modifier
+Date:   Mon Sep 29 09:27:51 2025 +0200 ## Quand
+
+    Init commit ## Nom du commit
+```
+
+Pour voir la différence on fait un 
+`git show 736f6fd48e7c4f3ea34625a0040b1a489f48e907`
+
+{{< prism lang="log" line="12,13" >}}
+commit 736f6fd48e7c4f3ea34625a0040b1a489f48e907 (HEAD -> master)
+Author: DaemonWhite <daemonwhites@vivaldi.net>
+Date:   Mon Sep 29 09:42:19 2025 +0200
+
+    fix: wold by world
+
+diff --git a/python.py b/python.py
+index 81a9525..8cde782 100644
+--- a/python.py
++++ b/python.py
+@@ -1 +1 @@
+-print("hello wold")
++print("hello world")
+```
+{{< /prism >}}
+
+{{% alert icon="" context="info" %}}
+
+NOTE!
+
+L'intérêt des commits, c'est la traçabilité,. Imaginons que vous créez une classe personnage dans votre jeu.
+
+Et qu'un tiers le modifie pour améliorer sa vitesse de déplacement. 
+
+Mais la nouvelle méthode de déplacement a apporté un nouveau bug.
+
+Grâce au commit, on pourra mieux comprendre ce qu'il a fait pour le corriger ou le retourner dans un état antérieur.
+{{% /alert %}}
+
+
+Les commits peuve êtres représenter par un arbre linéaire
+
+```mermaid
+gitGraph
+    commit id: "Init Commit"
+    commit id: "fix: wold by world"
+    commit id: "add french hello world"
+
+```

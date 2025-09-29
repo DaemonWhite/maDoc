@@ -27,7 +27,8 @@ canonifyURLs = true
         sidebarIcons    = true
         titleIcon       = true
         darkMode        = true
-        
+        prism           = true
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
